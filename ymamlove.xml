@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.4
+- https://www.phpmyadmin.net
+-
+- Хост: localhost:3307
+- Время создания: Апр 24 2022 г., 22:22
+- Версия сервера: 5.7.24
+- Версия PHP: 8.0.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="ymamlove" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="adventuredata">
+                CREATE TABLE `adventuredata` (
+                  `name` varchar(100) NOT NULL,
+                  `price` varchar(100) NOT NULL,
+                  `weight` varchar(100) NOT NULL,
+                  `color` varchar(100) NOT NULL,
+                  `number` int(100) unsigned NOT NULL,
+                  UNIQUE KEY `number` (`number`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="cooperativedata">
+                CREATE TABLE `cooperativedata` (
+                  `name` varchar(100) NOT NULL,
+                  `price` varchar(100) NOT NULL,
+                  `weight` varchar(100) NOT NULL,
+                  `color` varchar(100) NOT NULL,
+                  `number` int(100) unsigned NOT NULL,
+                  UNIQUE KEY `number` (`number`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="datacard">
+                CREATE TABLE `datacard` (
+                  `name` varchar(100) CHARACTER SET utf8 NOT NULL,
+                  `price` varchar(100) NOT NULL,
+                  `weight` varchar(100) CHARACTER SET utf8 NOT NULL,
+                  `color` varchar(100) CHARACTER SET utf8 NOT NULL,
+                  `number` int(100) unsigned NOT NULL,
+                  UNIQUE KEY `number` (`number`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="detectivedata">
+                CREATE TABLE `detectivedata` (
+                  `name` varchar(100) NOT NULL,
+                  `price` varchar(100) NOT NULL,
+                  `weight` varchar(100) NOT NULL,
+                  `color` varchar(100) NOT NULL,
+                  `number` int(100) unsigned NOT NULL,
+                  UNIQUE KEY `number` (`number`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="economicdata">
+                CREATE TABLE `economicdata` (
+                  `name` varchar(100) NOT NULL,
+                  `price` varchar(100) NOT NULL,
+                  `weight` varchar(100) NOT NULL,
+                  `color` varchar(100) NOT NULL,
+                  `number` int(100) unsigned NOT NULL,
+                  UNIQUE KEY `number` (`number`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="foradmin">
+                CREATE TABLE `foradmin` (
+                  `admin` int(100) unsigned NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="orders">
+                CREATE TABLE `orders` (
+                  `ordernumber` int(100) unsigned NOT NULL AUTO_INCREMENT,
+                  `customername` varchar(100) NOT NULL,
+                  `customersurname` varchar(100) NOT NULL,
+                  `customeraddress` varchar(100) NOT NULL,
+                  `customernumber` varchar(100) NOT NULL,
+                  `numberproduct` varchar(100) NOT NULL,
+                  UNIQUE KEY `ordernumber` (`ordernumber`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="puzzledata">
+                CREATE TABLE `puzzledata` (
+                  `name` varchar(100) NOT NULL,
+                  `price` varchar(100) NOT NULL,
+                  `weight` varchar(100) NOT NULL,
+                  `color` varchar(100) NOT NULL,
+                  `number` int(100) unsigned NOT NULL,
+                  UNIQUE KEY `number` (`number`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `login` varchar(32) NOT NULL,
+                  `password` varchar(32) NOT NULL,
+                  UNIQUE KEY `id` (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'ymamlove'
+    -->
+    <database name="ymamlove">
+        <!-- Таблица adventuredata -->
+        <table name="adventuredata">
+            <column name="name">3</column>
+            <column name="price">3</column>
+            <column name="weight">3</column>
+            <column name="color">3</column>
+            <column name="number">3</column>
+        </table>
+        <!-- Таблица cooperativedata -->
+        <table name="cooperativedata">
+            <column name="name">4</column>
+            <column name="price">4</column>
+            <column name="weight">4</column>
+            <column name="color">4</column>
+            <column name="number">4</column>
+        </table>
+        <!-- Таблица datacard -->
+        <table name="datacard">
+            <column name="name">Ужас Аркхэма</column>
+            <column name="price">132.00 р.</column>
+            <column name="weight">255х255х62 мм</column>
+            <column name="color">blue</column>
+            <column name="number">44554</column>
+        </table>
+        <table name="datacard">
+            <column name="name">Неудержимые единорожки</column>
+            <column name="price">37.00 р.</column>
+            <column name="weight">165x114x41 мм</column>
+            <column name="color">white</column>
+            <column name="number">48882</column>
+        </table>
+        <table name="datacard">
+            <column name="name">Бункер</column>
+            <column name="price">113.00 р.</column>
+            <column name="weight">210x160x60 мм</column>
+            <column name="color">yellow</column>
+            <column name="number">48731</column>
+        </table>
+        <table name="datacard">
+            <column name="name">ЗБС</column>
+            <column name="price">37.00 р.</column>
+            <column name="weight">157x235x47 мм</column>
+            <column name="color">black</column>
+            <column name="number">51004</column>
+        </table>
+        <table name="datacard">
+            <column name="name">Неудержимые единорожки</column>
+            <column name="price">37.00 р</column>
+            <column name="weight">165x114x41 мм</column>
+            <column name="color">black</column>
+            <column name="number">50910</column>
+        </table>
+        <table name="datacard">
+            <column name="name">Манчкин: Гравити Фолз</column>
+            <column name="price">56.00 р.</column>
+            <column name="weight">235x157x47 мм</column>
+            <column name="color">all-colors</column>
+            <column name="number">51034</column>
+        </table>
+        <table name="datacard">
+            <column name="name">Амазония</column>
+            <column name="price">56.00 р.</column>
+            <column name="weight">157x235x47 мм</column>
+            <column name="color">green</column>
+            <column name="number">51144</column>
+        </table>
+        <table name="datacard">
+            <column name="name">Взрывные котята</column>
+            <column name="price">37.00 р.</column>
+            <column name="weight">165x114x41 мм</column>
+            <column name="color">grey</column>
+            <column name="number">47252</column>
+        </table>
+        <table name="datacard">
+            <column name="name">1</column>
+            <column name="price">1</column>
+            <column name="weight">1</column>
+            <column name="color">1</column>
+            <column name="number">1</column>
+        </table>
+        <!-- Таблица detectivedata -->
+        <table name="detectivedata">
+            <column name="name">5</column>
+            <column name="price">5</column>
+            <column name="weight">5</column>
+            <column name="color">5</column>
+            <column name="number">5</column>
+        </table>
+        <!-- Таблица economicdata -->
+        <table name="economicdata">
+            <column name="name">6</column>
+            <column name="price">6</column>
+            <column name="weight">6</column>
+            <column name="color">6</column>
+            <column name="number">6</column>
+        </table>
+        <!-- Таблица foradmin -->
+        <table name="foradmin">
+            <column name="admin">2</column>
+        </table>
+        <!-- Таблица orders -->
+        <table name="orders">
+            <column name="ordernumber">13</column>
+            <column name="customername">22</column>
+            <column name="customersurname">2</column>
+            <column name="customeraddress">2</column>
+            <column name="customernumber">2</column>
+            <column name="numberproduct">5</column>
+        </table>
+        <table name="orders">
+            <column name="ordernumber">12</column>
+            <column name="customername">Arte,</column>
+            <column name="customersurname">123</column>
+            <column name="customeraddress">2</column>
+            <column name="customernumber">21</column>
+            <column name="numberproduct">51034</column>
+        </table>
+        <table name="orders">
+            <column name="ordernumber">11</column>
+            <column name="customername">124</column>
+            <column name="customersurname">241</column>
+            <column name="customeraddress">241</column>
+            <column name="customernumber">421</column>
+            <column name="numberproduct">6</column>
+        </table>
+        <!-- Таблица puzzledata -->
+        <table name="puzzledata">
+            <column name="name">2</column>
+            <column name="price">2</column>
+            <column name="weight">2</column>
+            <column name="color">2</column>
+            <column name="number">2</column>
+        </table>
+        <!-- Таблица users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="login">Tiomga</column>
+            <column name="password">qwerty</column>
+        </table>
+        <table name="users">
+            <column name="id">10</column>
+            <column name="login">admin</column>
+            <column name="password">admin</column>
+        </table>
+        <table name="users">
+            <column name="id">9</column>
+            <column name="login">1</column>
+            <column name="password">1</column>
+        </table>
+        <table name="users">
+            <column name="id">8</column>
+            <column name="login">Kirill</column>
+            <column name="password">123</column>
+        </table>
+    </database>
+</pma_xml_export>
